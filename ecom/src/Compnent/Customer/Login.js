@@ -45,7 +45,8 @@ const Login = ()=>{
 
                 navigate('/login');
 
-            }else{
+            }
+            else{
 
                 navigate('/register')
 
