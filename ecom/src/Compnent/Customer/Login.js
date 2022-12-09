@@ -45,8 +45,15 @@ const Login = ()=>{
 
                 navigate('/login');
 
+<<<<<<< .mine
             }
             else{
+
+=======
+            }
+            else
+            {
+>>>>>>> .theirs
 
                 navigate('/register')
 

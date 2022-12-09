@@ -4,6 +4,8 @@ import Header from './Header';
 import{BrowserRouter,Route,Router,Routes}from 'react-router-dom'
 import Login from './Compnent/Customer/Login';
 import Register from './Compnent/Customer/Register';
+
+import ClientRegister from './Compnent/Client/ClientRegister';
 import Logout from './Compnent/Customer/Logout';
 import CustomerDashboard from './Compnent/Customer/CustomerDashboard';
 import ClientDashboard from './Compnent/Client/ClientDashboard';
@@ -21,6 +23,7 @@ function App() {
     <Routes>
     <Route exact path='/login' element={<Login/>} />
     <Route exact path='/register' element={<Register/>} />
+    <Route exact path='/client/register' element={<ClientRegister/>} />
     <Route exact path='/logout' element={<Logout/>} />
     <Route exact path='/dashboard' element={<CustomerDashboard/>} />
     <Route exact path='/clientdashboard' element={<ClientDashboard/>} />
