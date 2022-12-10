@@ -41,21 +41,14 @@ const Login = ()=>{
 
             console.log(localStorage.getItem('user'));
 
-            if (token == "No user found"){
+            if (token == "user found"){
 
-                navigate('/login');
+              navigate('/login');
 
-<<<<<<< .mine
-            }
-            else{
-
-=======
             }
             else
             {
->>>>>>> .theirs
-
-                navigate('/register')
+              navigate('/dashboard')
 
             }
 

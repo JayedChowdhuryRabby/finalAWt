@@ -9,6 +9,7 @@ function Header()
            <Nav className="me-auto navbar_wrapper">
             <Link to="/register">Customer Register</Link>
             <Link to="/client/register">Client Register</Link>
+            <Link to="/dashboard">Customer Dashboard</Link>
             <Link to="/login">Login</Link>
             <Link to="/logout">Logout</Link>
 
