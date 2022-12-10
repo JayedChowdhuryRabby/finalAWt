@@ -10,6 +10,9 @@ function Header()
             <Link to="/register">Customer Register</Link>
             <Link to="/client/register">Client Register</Link>
             <Link to="/dashboard">Customer Dashboard</Link>
+            <Link to="/addproduct">Add Product</Link>
+            <Link to="/productlist">Product List</Link>
+           
             <Link to="/login">Login</Link>
             <Link to="/logout">Logout</Link>
 

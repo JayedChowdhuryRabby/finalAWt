@@ -4,6 +4,9 @@ import Header from './Header';
 import{BrowserRouter,Route,Router,Routes}from 'react-router-dom'
 import Login from './Compnent/Customer/Login';
 import Register from './Compnent/Customer/Register';
+import AddProduct from './Compnent/Client/AddProduct';
+import ProductList from './Compnent/Client/ProductList';
+
 
 import ClientRegister from './Compnent/Client/ClientRegister';
 import Logout from './Compnent/Customer/Logout';
@@ -27,6 +30,9 @@ function App() {
     <Route exact path='/logout' element={<Logout/>} />
     <Route exact path='/dashboard' element={<CustomerDashboard/>} />
     <Route exact path='/clientdashboard' element={<ClientDashboard/>} />
+    <Route exact path='/addproduct' element={<AddProduct/>} />
+    <Route exact path='/productlist' element={<ProductList/>} />
+ 
     </Routes>
     </BrowserRouter>
     </div>
