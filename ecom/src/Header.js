@@ -13,8 +13,10 @@ function Header()
             <Link to="/addproduct">Add Product</Link>
             <Link to="/productlist">Product List</Link>
            
+           
             <Link to="/login">Login</Link>
             <Link to="/logout">Logout</Link>
+            <Link to="/mailer">Contact</Link>
 
           </Nav>
         

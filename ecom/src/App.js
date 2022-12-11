@@ -12,6 +12,7 @@ import ClientRegister from './Compnent/Client/ClientRegister';
 import Logout from './Compnent/Customer/Logout';
 import CustomerDashboard from './Compnent/Customer/CustomerDashboard';
 import ClientDashboard from './Compnent/Client/ClientDashboard';
+import Mailer from './Compnent/Client/Mailer';
 import axios from 'axios';
 
 axios.defaults.baseURL="http://127.0.0.1:8000/";
@@ -32,6 +33,7 @@ function App() {
     <Route exact path='/clientdashboard' element={<ClientDashboard/>} />
     <Route exact path='/addproduct' element={<AddProduct/>} />
     <Route exact path='/productlist' element={<ProductList/>} />
+    <Route exact path='/mailer' element={<Mailer/>} />
  
     </Routes>
     </BrowserRouter>
