@@ -24,6 +24,34 @@ function ProductList()
 
 
 var display_productdata = " ";
+
+const submitAddtoCart =(e) =>{
+    e.preventDefault();
+
+    axios.get('http://127.0.0.1:8000/api/ProductList').then(res=>{
+        if(res.data.status === 201)
+        {
+            swal("Suceessfully Registered", {
+                icon: "success",
+              });
+            
+        }
+        else if(res.data.status ===409)
+        {
+            swal("Suceessfully Registered", {
+                icon: "success",
+              });
+        }
+        else if(res.data.status===401)
+        {
+            swal("Suceessfully Registered", {
+                icon: "success",
+              });
+
+        }
+
+});
+}
 if(loading)
 {
 
@@ -38,8 +66,8 @@ else{
                 <td>{item.id}</td>
                 <td>{item.name}</td>
                 <td>{item.price}</td>
-                <td>{item.image}</td>
-                <td><Link to="addtocart" className="btn btn-success btn-sm">Add To Cart</Link> </td>
+                <td><img src={"http://127.0.0.1:8000/"+item.image}/></td>
+                <button type="button" className="btn btn-primary w-100" onClick={submitAddtoCart}>Add to Cart</button>
                
             </tr>
         )

@@ -4,6 +4,7 @@ import axios from "axios";
 
 import { useNavigate } from "react-router-dom";
 
+import emailjs from 'emailjs-com'
 
 
 
@@ -41,7 +42,7 @@ const Login = ()=>{
 
             console.log(localStorage.getItem('user'));
 
-            if (token == "user found"){
+            if (token == "No user found"){
 
               navigate('/login');
 
@@ -63,15 +64,24 @@ const Login = ()=>{
 
     }
 
+    function sendMail(e)
+    {
+        e.preventDefault();
+
+        emailjs.sendForm('service_wuft4s8','template_kse6086',e.target,'F40oUcK1IJEy8TSbD').then(res=>{
+            console.log(res);
+        }).catch(err=> console.log(err));
+    }
+
       return (
 
     <>
 
     <div className="col-sm-6 offset-sm-3">
 
-   
 
       <h1 align="center">Login page</h1>
+      <form className="row" style={{margin: "25px 85px 75px 100px"}}onSubmit={sendMail}>
 
       <div className="col-sm-6 offset-sm-3">
 
@@ -82,6 +92,7 @@ const Login = ()=>{
          <button onClick={loginSubmit} className="btn btn-primary">Login</button>
 
       </div>
+      </form>
 
      
 
