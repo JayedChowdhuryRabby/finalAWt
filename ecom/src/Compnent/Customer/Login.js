@@ -47,11 +47,22 @@ const Login = ()=>{
               navigate('/login');
 
             }
-            else
+            else if(token=="Customer found")
             {
-              navigate('/dashboard')
+              navigate('/adminDasboard')
 
             }
+            else if(token=="Client found")
+            {
+              navigate('/clientDasboard')
+
+            }
+            else if(token=="Admin found")
+            {
+              navigate('/adminDasboard"')
+
+            }
+
 
         }).catch(err=>{
 

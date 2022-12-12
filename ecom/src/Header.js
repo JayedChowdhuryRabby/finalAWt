@@ -9,14 +9,15 @@ function Header()
            <Nav className="me-auto navbar_wrapper">
             <Link to="/register">Customer Register</Link>
             <Link to="/client/register">Client Register</Link>
-            <Link to="/dashboard">Customer Dashboard</Link>
             <Link to="/addproduct">Add Product</Link>
             <Link to="/productlist">Product List</Link>
-           
-           
+            <Link to="/dashboard">Customer Dashboard</Link>
+            <Link to="/clientDasboard">Client Dashboard</Link>
+            <Link to="/adminDasboard">Admin Dashboard</Link>
+            <Link to="/mailer">Contact</Link>
             <Link to="/login">Login</Link>
             <Link to="/logout">Logout</Link>
-            <Link to="/mailer">Contact</Link>
+        
 
           </Nav>
         
