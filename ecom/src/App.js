@@ -6,7 +6,9 @@ import Login from './Compnent/Customer/Login';
 import Register from './Compnent/Customer/Register';
 import AddProduct from './Compnent/Client/AddProduct';
 import ProductList from './Compnent/Client/ProductList';
-
+import AdminDashboard from './Compnent/Admin/AdminDashboard';
+import ClientList from './Compnent/Client/ClientList';
+import CustomerList from './Compnent/Customer/CustomerList';
 
 import ClientRegister from './Compnent/Client/ClientRegister';
 import Logout from './Compnent/Customer/Logout';
