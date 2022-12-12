@@ -2,7 +2,7 @@ import React, {useState, userEffect} from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-const LogOut = ()=>{
+const Logout = ()=>{
 
     const navigate = useNavigate();
     let user = JSON.parse(localStorage.getItem('user'));
@@ -25,4 +25,4 @@ const LogOut = ()=>{
 
     )
 }
-export default LogOut;  
+export default Logout;  
