@@ -49,7 +49,7 @@ const Login = ()=>{
             }
             else if(token=="Customer found")
             {
-              navigate('/adminDasboard')
+              navigate('/dashboard')
 
             }
             else if(token=="Client found")
@@ -59,7 +59,7 @@ const Login = ()=>{
             }
             else if(token=="Admin found")
             {
-              navigate('/adminDasboard"')
+              navigate('/adminDasboard')
 
             }
 
