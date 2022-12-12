@@ -6,8 +6,8 @@ import Login from './Compnent/Customer/Login';
 import Register from './Compnent/Customer/Register';
 import AddProduct from './Compnent/Client/AddProduct';
 import ProductList from './Compnent/Client/ProductList';
-
-
+import ClientList from './Compnent/Client/ClientList';
+import CustomerList from './Compnent/Customer/CustomerList';
 import ClientRegister from './Compnent/Client/ClientRegister';
 import Logout from './Compnent/Customer/Logout';
 import CustomerDashboard from './Compnent/Customer/CustomerDashboard';
@@ -33,6 +33,8 @@ function App() {
     <Route exact path='/clientdashboard' element={<ClientDashboard/>} />
     <Route exact path='/addproduct' element={<AddProduct/>} />
     <Route exact path='/productlist' element={<ProductList/>} />
+    <Route exact path='/clientlist' element={<ClientList/>} />
+    <Route exact path='/customerlist' element={<CustomerList/>} />
     <Route exact path='/mailer' element={<Mailer/>} />
  
     </Routes>
