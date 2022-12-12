@@ -17,9 +17,7 @@ const Mailer = () =>
     
     }} > 
             <h1>Contact Form</h1>
-            <form className="row" style={{margin: "25px 85px 75px 100px"}}
-            onSubmit={sendMail}
-            >
+            <form className="row" style={{margin: "25px 85px 75px 100px"}}onSubmit={sendMail}>
                 <label>name</label>
                 <input type="text" name="name"/>
                 <label>Email</label>
